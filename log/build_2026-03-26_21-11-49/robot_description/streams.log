@@ -1,0 +1,104 @@
+[0.013s] Invoking command in '/home/nithish/ROS/mujoco_robot_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nithish/ROS/mujoco_robot_ws/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/nithish/ROS/mujoco_robot_ws/install/robot_description
+[0.122s] -- The C compiler identification is GNU 13.3.0
+[0.207s] -- The CXX compiler identification is GNU 13.3.0
+[0.225s] -- Detecting C compiler ABI info
+[0.308s] -- Detecting C compiler ABI info - done
+[0.317s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.317s] -- Detecting C compile features
+[0.318s] -- Detecting C compile features - done
+[0.327s] -- Detecting CXX compiler ABI info
+[0.410s] -- Detecting CXX compiler ABI info - done
+[0.418s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.418s] -- Detecting CXX compile features
+[0.419s] -- Detecting CXX compile features - done
+[0.428s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.564s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.692s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[0.748s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.764s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[0.768s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.872s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.872s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.873s] -- Added test 'lint_cmake' to check CMake code style
+[0.874s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.876s] -- Added test 'xmllint' to check XML markup files
+[0.878s] -- Configuring done (0.9s)
+[0.881s] -- Generating done (0.0s)
+[0.883s] -- Build files have been written to: /home/nithish/ROS/mujoco_robot_ws/build/robot_description
+[0.889s] Invoked command in '/home/nithish/ROS/mujoco_robot_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/nithish/ROS/mujoco_robot_ws/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/nithish/ROS/mujoco_robot_ws/install/robot_description
+[0.890s] Invoking command in '/home/nithish/ROS/mujoco_robot_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nithish/ROS/mujoco_robot_ws/build/robot_description -- -j8 -l8
+[0.925s] Invoked command in '/home/nithish/ROS/mujoco_robot_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nithish/ROS/mujoco_robot_ws/build/robot_description -- -j8 -l8
+[0.933s] Invoking command in '/home/nithish/ROS/mujoco_robot_ws/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nithish/ROS/mujoco_robot_ws/build/robot_description
+[0.940s] -- Install configuration: ""
+[0.940s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/config
+[0.940s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/config/view_config.rviz
+[0.940s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/launch
+[0.940s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/launch/rviz.launch.py
+[0.940s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes
+[0.940s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual
+[0.940s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/shoulder_visual.stl
+[0.940s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_arg2f_coupling_visual.stl
+[0.941s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_85_knuckle_link.dae
+[0.941s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/SuctionCup.stl
+[0.941s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/forearm_visual.stl
+[0.941s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/upperarm.dae
+[0.943s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_arg2f_140_inner_finger_visual.stl
+[0.943s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_85_finger_tip_link.dae
+[0.943s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/wrist1.dae
+[0.943s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/wrist3_visual.stl
+[0.943s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/wrist2_visual.stl
+[0.944s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_85_base_link.dae
+[0.945s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_arg2f_140_outer_knuckle_visual.stl
+[0.945s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/forearm.dae
+[0.946s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/wrist3.dae
+[0.946s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_85_finger_link.dae
+[0.946s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/base.dae
+[0.946s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_arg2f_140_inner_knuckle_visual.stl
+[0.946s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_arg2f_140_outer_finger_visual.stl
+[0.947s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/upperarm_visual.stl
+[0.947s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/base_visual.stl
+[0.947s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/wrist2.dae
+[0.948s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/shoulder.dae
+[0.949s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_arg2f_base_link_visual.stl
+[0.949s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/robotiq_85_inner_knuckle_link.dae
+[0.949s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/visual/wrist1_visual.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/SuctionCup.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_85_knuckle_link.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_85_finger_link.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/upperarm.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/wrist3.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_85_inner_knuckle_link.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_arg2f_140_inner_knuckle.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/wrist2.stl
+[0.950s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/shoulder.stl
+[0.951s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_arg2f_140_outer_knuckle.stl
+[0.951s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_arg2f_140_outer_finger.stl
+[0.951s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/base.stl
+[0.951s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_85_finger_tip_link.stl
+[0.951s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_85_base_link.stl
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/wrist1.stl
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_arg2f_coupling.stl
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/forearm.stl
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_arg2f_base_link.stl
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/meshes/collision/robotiq_arg2f_140_inner_finger.stl
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/urdf
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/urdf/ur5.urdf.xacro
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/urdf/ur5.mujoco.xml
+[0.952s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/urdf/ur5.urdf
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/environment/path.sh
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/environment/path.dsv
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/local_setup.bash
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/local_setup.sh
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/local_setup.zsh
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/local_setup.dsv
+[0.953s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/package.dsv
+[0.954s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/ament_index/resource_index/packages/robot_description
+[0.954s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+[0.954s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+[0.954s] -- Installing: /home/nithish/ROS/mujoco_robot_ws/install/robot_description/share/robot_description/package.xml
+[0.955s] Invoked command in '/home/nithish/ROS/mujoco_robot_ws/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nithish/ROS/mujoco_robot_ws/build/robot_description
