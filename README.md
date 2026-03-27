@@ -2,3 +2,5 @@
 
 Controlling a ur5 robot with moveit in MuJoCo Sim.
 
+Converter URDF to MJDF.
+
