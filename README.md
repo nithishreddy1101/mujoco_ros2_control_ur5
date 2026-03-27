@@ -67,13 +67,11 @@ sudo apt update && sudo apt install -y \
 mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
 
 # Clone this repository
-git clone https://github.com/<your-org>/<your-repo>.git
+git clone https://github.com/nithishreddy1101/mujoco_ros2_control_ur5.git
 
 # Clone mujoco_ros2_control (if not already a vendored dependency)
 https://github.com/ros-controls/mujoco_ros2_control
 ```
-
-> Replace `<your-org>/<your-repo>` with your actual GitHub path.
 
 ### 2 — Install ROS dependencies
 
@@ -106,7 +104,7 @@ echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
 ### Launch the MuJoCo simulation + controllers
 
 ```bash
-ros2 launch <your_package> sim.launch.py
+ros2 launch ur5_moveit_config demo.launch.py
 ```
 
 This starts:
@@ -119,7 +117,7 @@ This starts:
 
 ```bash
 source ~/ros2_ws/install/setup.bash
-ros2 launch <your_package> moveit.launch.py
+ros2 launch ur5_moveit_config  moveit.launch.py(no need for now)
 ```
 
 This starts:
