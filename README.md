@@ -139,18 +139,40 @@ Or use the RViz **Motion Planning** panel to drag the interactive marker to a go
 ### Controllers (`config/controllers.yaml`)
 
 ```yaml
+# This config file is used by ros2_control
 controller_manager:
   ros__parameters:
-    update_rate: 1000  # Hz
+    update_rate: 100  # Hz
 
-joint_trajectory_controller:
+    ur5_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+    hand_controller:
+      type: position_controllers/GripperActionController
+
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+ur5_arm_controller:
   ros__parameters:
     joints:
-      - joint1
-      - joint2
-      - joint3
-    command_interfaces: [position]
-    state_interfaces: [position, velocity]
+      - shoulder_pan_joint
+      - shoulder_lift_joint
+      - elbow_joint
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    allow_nonzero_velocity_at_trajectory_end: true
+hand_controller:
+  ros__parameters:
+    joint: finger_joint
 ```
 
 ### MuJoCo scene (`config/mujoco/scene.xml`)
