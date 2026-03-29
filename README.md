@@ -179,7 +179,7 @@ hand_controller:
 
 The scene XML references your robot MJCF model and any additional objects (ground plane, obstacles, cameras). Point the launch file to a different scene file to switch environments without recompiling.
 
-### MoveIt SRDF (`config/moveit/<robot>.srdf`)
+### MoveIt SRDF (`config/moveit/ur5_robot.srdf`)
 
 Define planning groups, end-effectors, and virtual joints here. Regenerate with the MoveIt Setup Assistant if you change the kinematic chain.
 
