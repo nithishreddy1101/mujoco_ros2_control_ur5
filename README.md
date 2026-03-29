@@ -185,13 +185,6 @@ Define planning groups, end-effectors, and virtual joints here. Regenerate with 
 
 ---
 
-## 🧪 Running Tests
-
-```bash
-cd ~/ros2_ws
-colcon test --packages-select <your_package>
-colcon test-result --verbose
-```
 
 ---
 
