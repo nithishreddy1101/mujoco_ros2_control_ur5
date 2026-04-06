@@ -15,7 +15,7 @@ This repository provides a complete integration stack that lets you:
 **Tested on:** Ubuntu 24.04 · ROS 2 Jazzy · MuJoCo 3.x
 
 
-![Demo](https://media.giphy.com/media/your-gif-id/giphy.gif)
+![Demo](https://github.com/nithishreddy1101/mujoco_ros2_control_ur5/blob/main/demo.gif)
 ---
 
 ## 🗂️ Repository Structure
