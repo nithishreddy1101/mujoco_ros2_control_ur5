@@ -14,6 +14,8 @@ This repository provides a complete integration stack that lets you:
 
 **Tested on:** Ubuntu 24.04 · ROS 2 Jazzy · MuJoCo 3.x
 
+
+![Demo](https://media.giphy.com/media/your-gif-id/giphy.gif)
 ---
 
 ## 🗂️ Repository Structure
