@@ -22,17 +22,17 @@ This repository provides a complete integration stack that lets you:
 
 ```
 .
-├── config/
-│   ├── controllers.yaml          # ros2_control controller configuration
-│   ├── moveit/                   # MoveIt SRDF, kinematics, planning pipeline configs
-│   └── mujoco/                   # MuJoCo scene XML files
-├── description/
-│   ├── urdf/                     # Robot URDF / xacro files
-│   └── meshes/                   # Visual and collision meshes
-├── launch/
-│   ├── sim.launch.py             # Start MuJoCo simulation + controllers
-│   └── moveit.launch.py          # Start MoveIt 2 move_group node
-├── src/                          # Optional custom nodes / plugins
+├── src/                          # ROS 2 workspace packages
+│   ├── robot_description/        # Robot URDF, meshes, and MuJoCo scenes
+│   │   ├── config/               # RViz configurations
+│   │   ├── launch/               # Launch files (rviz.launch.py)
+│   │   ├── meshes/               # Visual and collision meshes
+│   │   ├── scenes/               # MuJoCo scene XML files (scene.xml)
+│   │   └── urdf/                 # Robot URDF / xacro and MuJoCo models
+│   └── ur5_moveit_config/        # MoveIt 2 generated package
+│       ├── config/               # MoveIt SRDF, kinematics, and ros2_controllers.yaml
+│       └── launch/               # Launch files (demo.launch.py, move_group, etc.)
+├── demo.gif                      # Demo and usage preview
 └── README.md
 ```
 
@@ -55,8 +55,8 @@ sudo apt update && sudo apt install -y \
   python3-rosdep \
   ros-jazzy-ros2-control \
   ros-jazzy-ros2-controllers \
-  ros-jazzy-moveit \
-  ros-jazzy-moveit-ros-planning-interface
+  ros-jazzy-moveit** \
+  ros-jazzy-mujoco-vendor 
 ```
 
 ---
@@ -66,13 +66,14 @@ sudo apt update && sudo apt install -y \
 ### 1 — Create a workspace and clone
 
 ```bash
-mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
 
 # Clone this repository
 git clone https://github.com/nithishreddy1101/mujoco_ros2_control_ur5.git
 
 # Clone mujoco_ros2_control (if not already a vendored dependency)
 https://github.com/ros-controls/mujoco_ros2_control
+
+#make sure mujoco_ros2_control is sourced
 ```
 
 ### 2 — Install ROS dependencies
@@ -113,7 +114,7 @@ This starts:
 - The MuJoCo physics engine with your robot scene
 - `robot_state_publisher`
 - `controller_manager` with `mujoco_ros2_control` as the hardware interface
-- Any controllers defined in `config/controllers.yaml` (e.g. `joint_trajectory_controller`)
+- Any controllers defined in `src/ur5_moveit_config/config/ros2_controllers.yaml` (e.g. `joint_trajectory_controller`)
 
 ### Launch MoveIt 2 (in a second terminal)
 
@@ -138,7 +139,7 @@ Or use the RViz **Motion Planning** panel to drag the interactive marker to a go
 
 ## ⚙️ Configuration
 
-### Controllers (`config/controllers.yaml`)
+### Controllers (`src/ur5_moveit_config/config/ros2_controllers.yaml`)
 
 ```yaml
 # This config file is used by ros2_control
@@ -177,11 +178,11 @@ hand_controller:
     joint: finger_joint
 ```
 
-### MuJoCo scene (`config/mujoco/scene.xml`)
+### MuJoCo scene (`src/robot_description/scenes/scene.xml`)
 
 The scene XML references your robot MJCF model and any additional objects (ground plane, obstacles, cameras). Point the launch file to a different scene file to switch environments without recompiling.
 
-### MoveIt SRDF (`config/moveit/ur5_robot.srdf`)
+### MoveIt SRDF (`src/ur5_moveit_config/config/ur5_robot.srdf`)
 
 Define planning groups, end-effectors, and virtual joints here. Regenerate with the MoveIt Setup Assistant if you change the kinematic chain.
 
@@ -202,7 +203,7 @@ export MUJOCO_GL=osmesa
 Verify your URDF `<ros2_control>` block references `mujoco_ros2_control/MujocoSystem` as the plugin and that the joint names match the MuJoCo model exactly.
 
 **MoveIt cannot find IK solution**
-Check `config/moveit/kinematics.yaml` — ensure the solver (e.g. `KDLKinematicsPlugin`) and the planning group tip link are correct.
+Check `src/ur5_moveit_config/config/kinematics.yaml` — ensure the solver (e.g. `KDLKinematicsPlugin`) and the planning group tip link are correct.
 
 ---
 
