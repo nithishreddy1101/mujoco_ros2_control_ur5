@@ -71,7 +71,7 @@ sudo apt update && sudo apt install -y \
 git clone https://github.com/nithishreddy1101/mujoco_ros2_control_ur5.git
 
 # Clone mujoco_ros2_control (if not already a vendored dependency)
-https://github.com/ros-controls/mujoco_ros2_control
+git clone https://github.com/ros-controls/mujoco_ros2_control
 
 #make sure mujoco_ros2_control is sourced
 ```
@@ -87,17 +87,17 @@ rosdep install --from-paths src --ignore-src -r -y
 ### 3 — Build
 
 ```bash
-cd ~/ros2_ws
+cd ~/mujoco_ros2_control
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo
 ```
 
 ### 4 — Source the workspace
 
 ```bash
-source ~/ros2_ws/install/setup.bash
+source ~/mujoco_ros2_control/install/setup.bash
 
 # Add to ~/.bashrc to avoid repeating this step
-echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
+echo "source ~/mujoco_ros2_control/install/setup.bash" >> ~/.bashrc
 ```
 
 ---
@@ -119,7 +119,7 @@ This starts:
 ### Launch MoveIt 2 (in a second terminal)
 
 ```bash
-source ~/ros2_ws/install/setup.bash
+source ~/mujoco_ros2_control/install/setup.bash
 ros2 launch ur5_moveit_config  moveit.launch.py(no need for now)
 ```
 
