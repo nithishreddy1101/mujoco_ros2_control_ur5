@@ -120,7 +120,7 @@ This starts:
 
 ```bash
 source ~/mujoco_ros2_control/install/setup.bash
-ros2 launch ur5_moveit_config  moveit.launch.py(no need for now)
+ros2 launch ur5_moveit_config  moveit.launch.py
 ```
 
 This starts:
