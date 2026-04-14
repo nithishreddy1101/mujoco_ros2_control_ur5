@@ -107,7 +107,7 @@ echo "source ~/mujoco_ros2_control/install/setup.bash" >> ~/.bashrc
 ### Launch the MuJoCo simulation + controllers
 
 ```bash
-ros2 launch ur5_moveit_config demo.launch.py
+ros2 launch ur5_moveit_config sim.control.launch.py 
 ```
 
 This starts:
