@@ -56,7 +56,7 @@ sudo apt update && sudo apt install -y \
   ros-jazzy-ros2-control \
   ros-jazzy-ros2-controllers \
   ros-jazzy-moveit** \
-  ros-jazzy-mujoco-vendor 
+  ros-jazzy-mujoco**
 ```
 
 ---
